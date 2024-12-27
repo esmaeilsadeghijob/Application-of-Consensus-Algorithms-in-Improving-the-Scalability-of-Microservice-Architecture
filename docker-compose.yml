@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  consul:
+    image: consul
+    ports:
+      - "8500:8500"
+    command: "consul agent -dev -client=0.0.0.0"
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - consul
+
+  order-service:
+    build: ./order-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - consul
+
+  payment-service:
+    build: ./payment-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - consul
