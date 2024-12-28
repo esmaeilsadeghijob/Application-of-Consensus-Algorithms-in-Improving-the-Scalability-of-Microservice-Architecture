@@ -1,4 +1,4 @@
-﻿# Application-of-Consensus-Algorithms-in-Improving-the-Scalability-of-Microservice-Architecture
+﻿# Boosting Scalability in Microservice Architectures with Consensus Mechanisms
 
 ### Overview This project demonstrates a microservices architecture using Spring Boot, Consul for service discovery, Spring Cloud Gateway as the API Gateway, Paxos for consensus, and the Enhanced Saga pattern for transaction
 
