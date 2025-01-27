@@ -26,7 +26,6 @@ spring-boot-microservices/
 5. **Paxos Service**: Ensures consensus and consistency across microservices. 
 6. **Saga Service**: Coordinates distributed transactions to ensure data integrity. ## Prerequisites
 
-
 ## Prerequisites 
 - JDK 17 or higher 
 - Maven 
@@ -37,7 +36,6 @@ spring-boot-microservices/
 ````sh 
 consul agent -dev 
 ````
-
 2. **Build and Run Each Microservice**: 
    - **API Gateway**: 
         ```sh
